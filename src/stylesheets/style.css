@@ -14,6 +14,10 @@ VBox {
     -fx-min-height: 64px;
     -fx-alignment: center;
     -fx-spacing: 8px;
+    -fx-background-color: gray;
+    -fx-border-color: black;
+    -fx-border-width: 3px;
+    -fx-border-radius: 10px;
 }
 
 VBox > .label {
