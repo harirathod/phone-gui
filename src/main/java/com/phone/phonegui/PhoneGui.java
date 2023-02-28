@@ -1,8 +1,8 @@
 package com.phone.phonegui;
 
 import javafx.application.Application;
-import javafx.scene.Scene;
-import javafx.scene.control.Label;
+import javafx.scene.*;
+import javafx.scene.control.*;
 import javafx.scene.layout.*;
 import javafx.stage.Stage;
 
@@ -15,9 +15,8 @@ public class PhoneGui extends Application {
 
     public PhoneGui()
     {
-        displayLabel = new Label("__");
+        displayLabel = new Label("9+ 9");
         displayLabel.setId("display-label");
-        displayLabel.setMaxWidth(Double.MAX_VALUE);
     }
 
     /**
@@ -37,7 +36,12 @@ public class PhoneGui extends Application {
         BorderPane root = new BorderPane();
         GridPane grid = new GridPane();
         createPhone(grid);
-        root.setTop(displayLabel);
+
+        Pane display = new VBox();
+        display.getChildren().add(displayLabel);
+        display.getStyleClass().add("display");
+        root.setTop(display);
+
         root.setCenter(grid);
         Scene scene = new Scene(root, 400, 600);
         scene.getStylesheets().add("/style.css");
@@ -81,6 +85,9 @@ public class PhoneGui extends Application {
         grid.addRow(1, four, five, six);
         grid.addRow(2, sev, eight, nine);
         grid.addRow(3, ast, zero, hash);
+        for(Node node : grid.getChildren()) {
+            node.getStyleClass().add("keypad");
+        }
 
 
     }
