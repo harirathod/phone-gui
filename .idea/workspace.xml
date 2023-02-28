@@ -4,22 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="808c573a-b3ce-4a8a-a1a4-48537b156e80" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/phone/phonegui/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/phone/phonegui/PhoneGui.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/phone/phonegui/hello-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stylesheets/style.css" afterDir="false" />
+    <list default="true" id="808c573a-b3ce-4a8a-a1a4-48537b156e80" name="Changes" comment="Add display label at top of screen and display label identifier">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/phone/phonegui/PhoneGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phone/phonegui/PhoneGui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +63,105 @@
       <option name="presentableId" value="Default" />
       <updated>1677574087791</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial Commit">
+      <created>1677578505109</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1677578505109</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add grid and phone buttons">
+      <created>1677578523244</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1677578523244</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Update spacing and add better arrangement to grid">
+      <created>1677578551496</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1677578551496</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Keep grid vertically centred in window">
+      <created>1677578602545</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1677578602545</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Align button &quot;1&quot; horizontally in keypad">
+      <created>1677578956049</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1677578956050</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Align button &quot;1&quot; vertically in keypad">
+      <created>1677578969988</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1677578969988</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Wrap the grid to the size of the keypad inside">
+      <created>1677578996892</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1677578996892</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Change spacing in VBox. Change font size of labels">
+      <created>1677579116823</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1677579116823</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add background color and border to keypad buttons">
+      <created>1677579156462</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1677579156462</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Make keypad background color lighter">
+      <created>1677579290566</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1677579290566</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Make keypad bigger">
+      <created>1677579417761</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1677579417761</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Add 4th row of *, 0, #. Add identifier for asterisk">
+      <created>1677579821649</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1677579821649</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Make asterisk bigger. Add padding for asterisk">
+      <created>1677579836045</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1677579836045</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Add display label at top of screen and display label identifier">
+      <created>1677580055177</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1677580055177</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -87,5 +174,22 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial Commit" />
+    <MESSAGE value="Add grid and phone buttons" />
+    <MESSAGE value="Update spacing and add better arrangement to grid" />
+    <MESSAGE value="Keep grid vertically centred in window" />
+    <MESSAGE value="Align button &quot;1&quot; horizontally in keypad" />
+    <MESSAGE value="Align button &quot;1&quot; vertically in keypad" />
+    <MESSAGE value="Wrap the grid to the size of the keypad inside" />
+    <MESSAGE value="Change spacing in VBox. Change font size of labels" />
+    <MESSAGE value="Add background color and border to keypad buttons" />
+    <MESSAGE value="Make keypad background color lighter" />
+    <MESSAGE value="Make keypad bigger" />
+    <MESSAGE value="Add 4th row of *, 0, #. Add identifier for asterisk" />
+    <MESSAGE value="Make asterisk bigger. Add padding for asterisk" />
+    <MESSAGE value="Add display label at top of screen and display label identifier" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add display label at top of screen and display label identifier" />
   </component>
 </project>
