@@ -10,16 +10,16 @@ GridPane {
 }
 
 VBox {
-    -fx-min-width: 64px;
-    -fx-min-height: 64px;
+    -fx-min-width: 72px;
+    -fx-min-height: 72px;
     -fx-alignment: center;
     -fx-spacing: 4px;
     -fx-background-color: #0000003a;
     -fx-border-color: black;
     -fx-border-width: 3px;
-    -fx-border-radius: 10px;
+    -fx-border-radius: 20px;
     -fx-background-insets: 2px;
-    -fx-background-radius: 10px;
+    -fx-background-radius: 20px;
 }
 
 VBox > .label {
