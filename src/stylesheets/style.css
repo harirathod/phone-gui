@@ -13,5 +13,10 @@ VBox {
     -fx-min-width: 64px;
     -fx-min-height: 64px;
     -fx-alignment: center;
-    -fx-spacing: 16px;
+    -fx-spacing: 8px;
+}
+
+VBox > .label {
+    -fx-font-size: 28px;
+
 }
