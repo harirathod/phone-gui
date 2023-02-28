@@ -11,6 +11,15 @@ import javafx.stage.Stage;
  */
 public class PhoneGui extends Application {
 
+    private Label displayLabel;
+
+    public PhoneGui()
+    {
+        displayLabel = new Label("__");
+        displayLabel.setId("display-label");
+        displayLabel.setMaxWidth(Double.MAX_VALUE);
+    }
+
     /**
      * The main method.
      * @param args Leave blank.
@@ -28,6 +37,7 @@ public class PhoneGui extends Application {
         BorderPane root = new BorderPane();
         GridPane grid = new GridPane();
         createPhone(grid);
+        root.setTop(displayLabel);
         root.setCenter(grid);
         Scene scene = new Scene(root, 400, 600);
         scene.getStylesheets().add("/style.css");
