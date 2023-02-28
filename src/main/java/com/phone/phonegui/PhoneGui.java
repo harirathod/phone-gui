@@ -39,7 +39,7 @@ public class PhoneGui extends Application {
     private void createPhone(GridPane grid)
     {
         VBox one = new VBox();
-        one.getChildren().addAll(new Label(), new Label("1"));
+        one.getChildren().add(new Label("1"));
         VBox two = new VBox();
         two.getChildren().addAll(new Label("ABC"), new Label("2"));
         VBox three = new VBox();
