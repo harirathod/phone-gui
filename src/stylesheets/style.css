@@ -5,7 +5,7 @@
 GridPane {
     -fx-vgap: 8px;
     -fx-hgap: 8px;
-
+    -fx-max-width: 216;
 }
 
 VBox {
