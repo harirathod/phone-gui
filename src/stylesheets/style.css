@@ -1,5 +1,4 @@
 * {
-
 }
 
 GridPane {
@@ -9,7 +8,7 @@ GridPane {
     -fx-max-height: 200;
 }
 
-VBox {
+VBox.keypad {
     -fx-min-width: 72px;
     -fx-min-height: 72px;
     -fx-alignment: center;
@@ -22,7 +21,7 @@ VBox {
     -fx-background-radius: 20px;
 }
 
-VBox > .label {
+VBox.keypad > .label {
     -fx-font-size: 18px;
 
 }
@@ -30,4 +29,23 @@ VBox > .label {
 #asterisk {
     -fx-padding: 8px 0px 0px 0px;
     -fx-font-size: 28px;
+}
+
+#display-label {
+    -fx-padding: 16px;
+    -fx-font-size: 16px;
+    -fx-font-family: sans-serif;
+    -fx-text-overrun: ellipsis;
+    -fx-text-fill: gray;
+}
+
+.display {
+    -fx-alignment: center;
+    -fx-background-color: transparent;
+    -fx-background-radius: 20px;
+    -fx-background-insets: 2px;
+
+    -fx-border-color: black;
+    -fx-border-width: 5px;
+    -fx-border-radius: 20px;
 }
