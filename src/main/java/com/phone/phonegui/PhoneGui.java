@@ -59,9 +59,18 @@ public class PhoneGui extends Application {
         VBox nine = new VBox();
         nine.getChildren().addAll(new Label("WXYZ"),new Label("9"));
 
+        VBox ast = new VBox();
+        ast.getChildren().addAll(new Label("*"));
+        ast.getChildren().get(0).setId("asterisk");
+        VBox zero = new VBox();
+        zero.getChildren().addAll(new Label("0"));
+        VBox hash = new VBox();
+        hash.getChildren().addAll(new Label("#"));
+
         grid.addRow(0, one, two, three);
         grid.addRow(1, four, five, six);
         grid.addRow(2, sev, eight, nine);
+        grid.addRow(3, ast, zero, hash);
 
 
     }
