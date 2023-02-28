@@ -26,3 +26,8 @@ VBox > .label {
     -fx-font-size: 18px;
 
 }
+
+#asterisk {
+    -fx-padding: 8px 0px 0px 0px;
+    -fx-font-size: 28px;
+}
