@@ -10,7 +10,7 @@ VBox {
     -fx-min-height: 72px;
 }
 
-VBox.keypad {
+VBox.keypad-button {
     -fx-alignment: center;
     -fx-spacing: 4px;
     -fx-background-color: #0000003a;
@@ -21,12 +21,12 @@ VBox.keypad {
     -fx-background-radius: 20px;
 }
 
-VBox.keypad > .label {
+VBox.keypad-button > .label {
     -fx-font-size: 18px;
     -fx-text-fill: aliceblue;
 }
 
-VBox.keypad:pressed {
+VBox.keypad-button:pressed {
     -fx-background-color: #000000ba;
 }
 
@@ -43,7 +43,7 @@ VBox.phone {
     -fx-border-radius: 10px;
 }
 
-#asterisk {
+#asterisk-button > .label {
     -fx-padding: 8px 0px 0px 0px;
     -fx-font-size: 28px;
 }
