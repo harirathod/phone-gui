@@ -26,6 +26,10 @@ VBox.keypad > .label {
     -fx-text-fill: aliceblue;
 }
 
+VBox.keypad:pressed {
+    -fx-background-color: #000000ba;
+}
+
 VBox.phone {
     -fx-max-width: 300px;
     -fx-max-height: 450px;
@@ -50,6 +54,7 @@ VBox.phone {
     -fx-text-overrun: ellipsis;
     -fx-text-fill: #0000008a;
     -fx-padding: 16px;
+    -fx-font-weight: 700;
 }
 
 .display {
