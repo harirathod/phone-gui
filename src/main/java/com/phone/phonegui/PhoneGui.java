@@ -7,7 +7,7 @@ import javafx.scene.layout.*;
 import javafx.stage.Stage;
 
 /**
- *
+ * This is the main class that display the phone and the keypad.
  */
 public class PhoneGui extends Application {
 
@@ -15,7 +15,7 @@ public class PhoneGui extends Application {
 
     public PhoneGui()
     {
-        displayLabel = new Label("9+ 9");
+        displayLabel = new Label("");
         displayLabel.setId("display-label");
     }
 
@@ -37,13 +37,14 @@ public class PhoneGui extends Application {
         GridPane grid = new GridPane();
         createPhone(grid);
 
-        Pane display = new VBox();
-        display.getChildren().add(displayLabel);
+        BorderPane display = new BorderPane();
         display.getStyleClass().add("display");
-        root.setTop(display);
+        display.setCenter(displayLabel);
 
-        root.setCenter(grid);
-        Scene scene = new Scene(root, 400, 600);
+        Pane phone = new VBox(display, grid);
+        phone.getStyleClass().add("phone");
+        root.setCenter(phone);
+        Scene scene = new Scene(root, 350, 500);
         scene.getStylesheets().add("/style.css");
         stage.setScene(scene);
         stage.setTitle("Phone");
@@ -88,7 +89,5 @@ public class PhoneGui extends Application {
         for(Node node : grid.getChildren()) {
             node.getStyleClass().add("keypad");
         }
-
-
     }
 }
