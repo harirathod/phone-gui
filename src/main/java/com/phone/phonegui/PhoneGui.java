@@ -6,6 +6,9 @@ import javafx.scene.control.*;
 import javafx.scene.layout.*;
 import javafx.stage.Stage;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * This is the main class that display the phone and the keypad.
  */
@@ -53,26 +56,36 @@ public class PhoneGui extends Application {
 
     private void createPhone(GridPane grid)
     {
+        List<VBox> numbers = new ArrayList<>();
         VBox one = new VBox();
         one.getChildren().add(new Label("1"));
+        one.setOnMouseClicked(event -> displayLabel.setText(displayLabel.getText() + "1"));
         VBox two = new VBox();
         two.getChildren().addAll(new Label("ABC"), new Label("2"));
+        two.setOnMouseClicked(event -> displayLabel.setText(displayLabel.getText() + "2"));
         VBox three = new VBox();
         three.getChildren().addAll(new Label("DEF"), new Label("3"));
-
+        three.setOnMouseClicked(event -> displayLabel.setText(displayLabel.getText() + "3"));
         VBox four = new VBox();
         four.getChildren().addAll(new Label("GHI"), new Label("4"));
+        four.setOnMouseClicked(event -> displayLabel.setText(displayLabel.getText() + "4"));
         VBox five = new VBox();
         five.getChildren().addAll(new Label("JKL"), new Label("5"));
+        five.setOnMouseClicked(event -> displayLabel.setText(displayLabel.getText() + "5"));
         VBox six = new VBox();
         six.getChildren().addAll(new Label("MNO"),new Label("6"));
-
+        six.setOnMouseClicked(event -> displayLabel.setText(displayLabel.getText() + "6"));
         VBox sev = new VBox();
         sev.getChildren().addAll(new Label("PQRS"), new Label("7"));
+        sev.setOnMouseClicked(event -> displayLabel.setText(displayLabel.getText() + "7"));
         VBox eight = new VBox();
         eight.getChildren().addAll(new Label("TUV"), new Label("8"));
+        eight.setOnMouseClicked(event -> displayLabel.setText(displayLabel.getText() + "8"));
         VBox nine = new VBox();
         nine.getChildren().addAll(new Label("WXYZ"),new Label("9"));
+        nine.setOnMouseClicked(event -> displayLabel.setText(displayLabel.getText() + "9"));
+
+
 
         VBox ast = new VBox();
         ast.getChildren().addAll(new Label("*"));
