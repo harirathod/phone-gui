@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="808c573a-b3ce-4a8a-a1a4-48537b156e80" name="Changes" comment="Change tags for keypad buttons">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phone/phonegui/PhoneGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phone/phonegui/PhoneGui.java" afterDir="false" />
-    </list>
+    <list default="true" id="808c573a-b3ce-4a8a-a1a4-48537b156e80" name="Changes" comment="Automatic configuration update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -216,7 +213,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677671647346</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Reverse text in display label when user hovers over asterisk">
+      <created>1677672056816</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1677672056816</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Automatic configuration update">
+      <created>1677672081355</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1677672081355</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -254,6 +265,8 @@
     <MESSAGE value="Display the appropriate number when a keypad button is clicked" />
     <MESSAGE value="Change color of keypad buttons on click" />
     <MESSAGE value="Change tags for keypad buttons" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change tags for keypad buttons" />
+    <MESSAGE value="Reverse text in display label when user hovers over asterisk" />
+    <MESSAGE value="Automatic configuration update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Automatic configuration update" />
   </component>
 </project>
