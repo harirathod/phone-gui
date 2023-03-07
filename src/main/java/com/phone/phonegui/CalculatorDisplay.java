@@ -7,6 +7,7 @@ import javafx.scene.control.*;
 import javafx.scene.*;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -58,49 +59,42 @@ public class CalculatorDisplay extends DisplayWithKeypad {
     private void createKeypad(GridPane grid)
     {
         if (grid == null) return;
-        VBox one = new VBox();
-        one.getChildren().add(new Label("1"));
-        VBox two = new VBox();
-        two.getChildren().addAll(new Label("2"));
-        VBox three = new VBox();
-        three.getChildren().addAll(new Label("3"));
-        VBox four = new VBox();
-        four.getChildren().addAll(new Label("4"));
-        VBox five = new VBox();
-        five.getChildren().addAll(new Label("5"));
-        VBox six = new VBox();
-        six.getChildren().addAll(new Label("6"));
-        VBox sev = new VBox();
-        sev.getChildren().addAll(new Label("7"));
-        VBox eight = new VBox();
-        eight.getChildren().addAll(new Label("8"));
-        VBox nine = new VBox();
-        nine.getChildren().addAll(new Label("9"));
-        VBox zero = new VBox();
-        zero.getChildren().addAll(new Label("0"));
+        Label one = new Label("1");
+        Label two = new Label("2");
+        Label three = new Label("3");
+        Label four = new Label("4");
+        Label five = new Label("5");
+        Label six = new Label("6");
+        Label seven = new Label("7");
+        Label eight = new Label("8");
+        Label nine = new Label("9");
+        Label zero = new Label("0");
+        Label decimal = new Label(".");
+        Label equals = new Label("=");
+        Label plus = new Label("+");
+        Label minus = new Label("-");
+        Label ac = new Label("AC");
 
-        List<VBox> numbers = new ArrayList<>();
-        numbers.add(one);
-        numbers.add(two);
-        numbers.add(three);
-        numbers.add(four);
-        numbers.add(five);
-        numbers.add(six);
-        numbers.add(sev);
-        numbers.add(eight);
-        numbers.add(nine);
-        numbers.add(zero);
-        // add event listener so when a keypad button is clicked, update the displayLabel with the tnumber in the
+        List<Label> numbers = new ArrayList<>();
+        Collections.addAll(numbers, one, two, three, four, five, six, seven, eight, nine, zero);
+
+        // add event listener so when a keypad button is clicked, update the displayLabel with the number in the
         // keypad button clicked
-        for(VBox vbox : numbers) {
-            Label label = (Label) vbox.getChildren().get(vbox.getChildren().size() - 1);
-            vbox.setOnMouseClicked(event -> displayLabel.setText(displayLabel.getText() + label.getText()));
+        for(Label label : numbers) {
+            label.setOnMouseClicked(event -> displayLabel.setText(displayLabel.getText() + label.getText()));
         }
 
         // add keypad buttons to the grid, and add an appropriate class to each
-        grid.addRow(0, sev, eight, nine);
+        grid.addRow(0, seven, eight, nine);
         grid.addRow(1, four, five, six);
         grid.addRow(2, one, two, three);
+        grid.add(zero, 0, 3, 5, 3);
+        grid.add(decimal, 2, 3);
+        grid.add(equals, 3, 3);
+        grid.add(ac, 3, 0);
+        grid.add(plus, 3, 1);
+        grid.add(minus, 3, 2);
+
         for(Node node : grid.getChildren()) {
             node.getStyleClass().add("keypad-button");
         }
