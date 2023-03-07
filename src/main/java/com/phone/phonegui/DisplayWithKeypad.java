@@ -18,7 +18,7 @@ public abstract class DisplayWithKeypad extends BorderPane {
 
     /**
      * Move the display to the left by using translation transitions.
-     * @param event The action event associated with this transitions.
+     * @param event The action event associated with this transition.
      */
     protected void moveToLeft(MouseEvent event)
     {
@@ -29,7 +29,7 @@ public abstract class DisplayWithKeypad extends BorderPane {
 
     /**
      * Move the display to the left by using translation transitions.
-     * @param event The action event associated with this transitions.
+     * @param event The action event associated with this transition.
      */
     protected void moveToRight(MouseEvent event)
     {
