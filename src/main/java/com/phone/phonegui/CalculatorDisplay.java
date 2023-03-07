@@ -21,7 +21,7 @@ public class CalculatorDisplay extends DisplayWithKeypad {
     public CalculatorDisplay()
     {
         super();
-        switchDisplays.setText(">");
+        switchDisplayLabel.setText("<");
         calculator = new BorderPane();
         createCalculator();
     }
@@ -39,15 +39,15 @@ public class CalculatorDisplay extends DisplayWithKeypad {
         display.setCenter(displayLabel);
         displayLabel.getStyleClass().add("display-label");
 
-        VBox switchContainer = new VBox(switchDisplays);
+        VBox switchContainer = new VBox(switchDisplayLabel);
         switchContainer.getStyleClass().add("switch-container");
         switchContainer.setMaxHeight(Double.MAX_VALUE);
-        switchDisplays.getStyleClass().add("switch");
+        switchDisplayLabel.getStyleClass().add("switch");
 
         calculator.setTop(display);
         calculator.setCenter(keypad);
         calculator.setRight(switchContainer);
-        calculator.getStyleClass().add("phone");
+        calculator.getStyleClass().add("calculator");
         this.setCenter(calculator);
     }
 
@@ -98,10 +98,9 @@ public class CalculatorDisplay extends DisplayWithKeypad {
         }
 
         // add keypad buttons to the grid, and add an appropriate class to each
-        grid.addRow(0, one, two, three);
+        grid.addRow(0, sev, eight, nine);
         grid.addRow(1, four, five, six);
-        grid.addRow(2, sev, eight, nine);
-        grid.addRow(3, zero);
+        grid.addRow(2, one, two, three);
         for(Node node : grid.getChildren()) {
             node.getStyleClass().add("keypad-button");
         }
