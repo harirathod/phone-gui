@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="808c573a-b3ce-4a8a-a1a4-48537b156e80" name="Changes" comment="Move all styles from the 'display' container to the '#display-label'">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/phone/phonegui/CalculatorView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/phone/phonegui/MainGui.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/phone/phonegui/PhoneDisplay.java" afterDir="false" />
+    <list default="true" id="808c573a-b3ce-4a8a-a1a4-48537b156e80" name="Changes" comment="Rename variables">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/phone/phonegui/DisplayWithKeypad.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phone/phonegui/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phone/phonegui/PhoneGui.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/phone/phonegui/CalculatorDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phone/phonegui/CalculatorDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/phone/phonegui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phone/phonegui/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/phone/phonegui/PhoneDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phone/phonegui/PhoneDisplay.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +59,7 @@
   </component>
   <component name="RunManager">
     <configuration name="com.phone.phonegui" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="com.phone.phonegui.MainGui" />
+      <option name="MAIN_CLASS_NAME" value="com.phone.phonegui.Main" />
       <module name="phone-gui" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -274,7 +271,56 @@
       <option name="project" value="LOCAL" />
       <updated>1678181910216</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Align the display switch button to be centralised vertically">
+      <created>1678184708529</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1678184708529</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Hide the phone using translate transition, when the switch button is clicked">
+      <created>1678184737723</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1678184737723</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Create class">
+      <created>1678184752386</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1678184752386</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Delete file">
+      <created>1678184759311</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1678184759311</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Create file to hold calculator and phone">
+      <created>1678184773466</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1678184773466</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Automatic configuration changes">
+      <created>1678184786465</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1678184786465</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Rename variables">
+      <created>1678184902440</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1678184902440</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -289,13 +335,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update spacing and add better arrangement to grid" />
-    <MESSAGE value="Keep grid vertically centred in window" />
-    <MESSAGE value="Align button &quot;1&quot; horizontally in keypad" />
-    <MESSAGE value="Align button &quot;1&quot; vertically in keypad" />
-    <MESSAGE value="Wrap the grid to the size of the keypad inside" />
-    <MESSAGE value="Change spacing in VBox. Change font size of labels" />
-    <MESSAGE value="Add background color and border to keypad buttons" />
     <MESSAGE value="Make keypad background color lighter" />
     <MESSAGE value="Make keypad bigger" />
     <MESSAGE value="Add 4th row of *, 0, #. Add identifier for asterisk" />
@@ -314,6 +353,13 @@
     <MESSAGE value="Automatic configuration update" />
     <MESSAGE value="Make display of phone span the whole width of the scene" />
     <MESSAGE value="Move all styles from the 'display' container to the '#display-label'" />
-    <option name="LAST_COMMIT_MESSAGE" value="Move all styles from the 'display' container to the '#display-label'" />
+    <MESSAGE value="Align the display switch button to be centralised vertically" />
+    <MESSAGE value="Hide the phone using translate transition, when the switch button is clicked" />
+    <MESSAGE value="Create class" />
+    <MESSAGE value="Delete file" />
+    <MESSAGE value="Create file to hold calculator and phone" />
+    <MESSAGE value="Automatic configuration changes" />
+    <MESSAGE value="Rename variables" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rename variables" />
   </component>
 </project>
