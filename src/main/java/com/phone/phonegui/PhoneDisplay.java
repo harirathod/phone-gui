@@ -11,24 +11,28 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * This is the main class that display the phone and the keypad.
+ * This class displays the Phone. It has a switch-button on its left side.
  */
-public class PhoneDisplay extends BorderPane {
-
-    private Label displayLabel;
-    private Label switchDisplays;
+public class PhoneDisplay extends DisplayWithKeypad {
     private BorderPane phone;
 
+    /**
+     * Initialise fields and construct the phone display.
+     */
     public PhoneDisplay()
     {
-        displayLabel = new Label("");
-        switchDisplays = new Label("<");
+        super();
+        switchDisplays.setText(">");
         phone = new BorderPane();
+        createPhoneDisplay();
     }
 
+    /**
+     * Construct the phone display.
+     */
     public void createPhoneDisplay() {
         GridPane keypad = new GridPane();
-        createPhone(keypad);
+        createKeypad(keypad);
 
         BorderPane display = new BorderPane();
         display.getStyleClass().add("display");
@@ -38,7 +42,6 @@ public class PhoneDisplay extends BorderPane {
         VBox switchContainer = new VBox(switchDisplays);
         switchContainer.getStyleClass().add("switch-container");
         switchContainer.setMaxHeight(Double.MAX_VALUE);
-        switchDisplays.setOnMouseClicked(this::hideDisplay);
         switchDisplays.getStyleClass().add("switch");
 
         phone.setTop(display);
@@ -48,8 +51,9 @@ public class PhoneDisplay extends BorderPane {
         this.setCenter(phone);
     }
 
-    private void createPhone(GridPane grid)
+    private void createKeypad(GridPane grid)
     {
+        if (grid == null) return;
         VBox one = new VBox();
         one.getChildren().add(new Label("1"));
         VBox two = new VBox();
@@ -120,13 +124,5 @@ public class PhoneDisplay extends BorderPane {
         displayLabel.setText(temp);
     }
 
-    /**
-     * Change the display from the phone to the calculator.
-     */
-    private void hideDisplay(MouseEvent event)
-    {
-        TranslateTransition hidePhone = new TranslateTransition(Duration.millis(500), phone);
-        hidePhone.setToX(-phone.getWidth());
-        hidePhone.play();
-    }
+
 }
