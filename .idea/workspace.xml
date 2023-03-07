@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="808c573a-b3ce-4a8a-a1a4-48537b156e80" name="Changes" comment="Automatic configuration update" />
+    <list default="true" id="808c573a-b3ce-4a8a-a1a4-48537b156e80" name="Changes" comment="Automatic configuration update">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/phone/phonegui/PhoneGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phone/phonegui/PhoneGui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +16,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/phone/phonegui/PhoneGui.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -234,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677672927320</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Automatic configuration update">
+      <created>1677673128947</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1677673128947</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
