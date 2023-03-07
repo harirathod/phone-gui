@@ -16,16 +16,14 @@ import java.util.List;
 public class PhoneDisplay extends BorderPane {
 
     private Label displayLabel;
-    private Label calculatorSwitch;
+    private Label switchDisplays;
     private BorderPane phone;
-    private CalculatorView calculatorView;
 
     public PhoneDisplay()
     {
         displayLabel = new Label("");
-        calculatorSwitch = new Label("<");
+        switchDisplays = new Label("<");
         phone = new BorderPane();
-        calculatorView = new CalculatorView();
     }
 
     public void createPhoneDisplay() {
@@ -37,15 +35,15 @@ public class PhoneDisplay extends BorderPane {
         display.setCenter(displayLabel);
         displayLabel.getStyleClass().add("display-label");
 
-        VBox calculatorSwitchContainer = new VBox(calculatorSwitch);
-        calculatorSwitchContainer.getStyleClass().add("switch-container");
-        calculatorSwitchContainer.setMaxHeight(Double.MAX_VALUE);
-        calculatorSwitch.setOnMouseClicked(this::hideDisplay);
-        calculatorSwitch.getStyleClass().add("switch");
+        VBox switchContainer = new VBox(switchDisplays);
+        switchContainer.getStyleClass().add("switch-container");
+        switchContainer.setMaxHeight(Double.MAX_VALUE);
+        switchDisplays.setOnMouseClicked(this::hideDisplay);
+        switchDisplays.getStyleClass().add("switch");
 
         phone.setTop(display);
         phone.setCenter(keypad);
-        phone.setLeft(calculatorSwitchContainer);
+        phone.setLeft(switchContainer);
         phone.getStyleClass().add("phone");
         this.setCenter(phone);
     }
