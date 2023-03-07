@@ -94,7 +94,7 @@ BorderPane.calculator {
 
 .switch {
     -fx-padding: 16px 8px 16px;
-    -fx-background-color: black;
+    -fx-background-color: #0000005a;
     -fx-text-fill: white;
 }
 
