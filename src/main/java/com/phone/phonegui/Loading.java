@@ -23,7 +23,7 @@ public class Loading extends BorderPane {
     private void createLoadingScreen()
     {
         text.setText("Loading...");
-        text.setFont(Font.font("Open Sans", 32));
+        text.setFont(Font.font("Open Sans", FontWeight.BOLD, 48));
         text.setFill(Color.WHITE);
         loadingLabel.setGraphic(text);
         this.setCenter(loadingLabel);
