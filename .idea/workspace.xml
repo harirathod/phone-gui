@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="808c573a-b3ce-4a8a-a1a4-48537b156e80" name="Changes" comment="Automatic configuration update">
+    <list default="true" id="808c573a-b3ce-4a8a-a1a4-48537b156e80" name="Changes" comment="Move all styles from the 'display' container to the '#display-label'">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/phone/phonegui/CalculatorView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/phone/phonegui/MainGui.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/phone/phonegui/PhoneDisplay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phone/phonegui/PhoneGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phone/phonegui/PhoneGui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/phone/phonegui/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/phone/phonegui/PhoneGui.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -14,11 +19,15 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/main/java/com/phone/phonegui/PhoneGui.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -47,10 +56,13 @@
       <recent name="$PROJECT_DIR$/src/main/resources/com/phone/phonegui" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.phone.phonegui" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="com.phone.phonegui" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="com.phone.phonegui.PhoneGui" />
+      <option name="MAIN_CLASS_NAME" value="com.phone.phonegui.MainGui" />
       <module name="phone-gui" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -248,7 +260,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677673128947</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Make display of phone span the whole width of the scene">
+      <created>1678181866781</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1678181866781</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Move all styles from the 'display' container to the '#display-label'">
+      <created>1678181910216</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1678181910216</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -263,8 +289,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Initial Commit" />
-    <MESSAGE value="Add grid and phone buttons" />
     <MESSAGE value="Update spacing and add better arrangement to grid" />
     <MESSAGE value="Keep grid vertically centred in window" />
     <MESSAGE value="Align button &quot;1&quot; horizontally in keypad" />
@@ -288,6 +312,8 @@
     <MESSAGE value="Change tags for keypad buttons" />
     <MESSAGE value="Reverse text in display label when user hovers over asterisk" />
     <MESSAGE value="Automatic configuration update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Automatic configuration update" />
+    <MESSAGE value="Make display of phone span the whole width of the scene" />
+    <MESSAGE value="Move all styles from the 'display' container to the '#display-label'" />
+    <option name="LAST_COMMIT_MESSAGE" value="Move all styles from the 'display' container to the '#display-label'" />
   </component>
 </project>
