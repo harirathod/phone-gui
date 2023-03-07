@@ -1,12 +1,11 @@
 package com.phone.phonegui;
 
-import javafx.application.Application;
+import javafx.animation.TranslateTransition;
 import javafx.scene.*;
 import javafx.scene.control.*;
-import javafx.scene.input.MouseDragEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.*;
-import javafx.stage.Stage;
+import javafx.util.Duration;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,55 +13,41 @@ import java.util.List;
 /**
  * This is the main class that display the phone and the keypad.
  */
-public class PhoneGui extends Application {
+public class PhoneDisplay extends BorderPane {
 
     private Label displayLabel;
     private Label calculatorSwitch;
+    private BorderPane phone;
+    private CalculatorView calculatorView;
 
-    public PhoneGui()
+    public PhoneDisplay()
     {
         displayLabel = new Label("");
-        displayLabel.setId("display-label");
         calculatorSwitch = new Label("<");
-        calculatorSwitch.setMaxHeight(Double.MAX_VALUE);
-        calculatorSwitch.setMaxWidth(Double.MAX_VALUE);
-        calculatorSwitch.setId("calculator-switch");
+        phone = new BorderPane();
+        calculatorView = new CalculatorView();
     }
 
-    /**
-     * The main method.
-     * @param args Leave blank.
-     */
-    public static void main(String[] args) {
-        launch();
-    }
-
-    /**
-     * The entry point to our application.
-     * @param stage The main stage (i.e., the main window) of our application, that this class will be using.
-     */
-    @Override
-    public void start(Stage stage) {
-        BorderPane root = new BorderPane();
+    public void createPhoneDisplay() {
         GridPane keypad = new GridPane();
         createPhone(keypad);
 
         BorderPane display = new BorderPane();
         display.getStyleClass().add("display");
         display.setCenter(displayLabel);
+        displayLabel.getStyleClass().add("display-label");
 
-        BorderPane phone = new BorderPane();
+        VBox calculatorSwitchContainer = new VBox(calculatorSwitch);
+        calculatorSwitchContainer.getStyleClass().add("switch-container");
+        calculatorSwitchContainer.setMaxHeight(Double.MAX_VALUE);
+        calculatorSwitch.setOnMouseClicked(this::hideDisplay);
+        calculatorSwitch.getStyleClass().add("switch");
+
         phone.setTop(display);
         phone.setCenter(keypad);
-        phone.setLeft(calculatorSwitch);
+        phone.setLeft(calculatorSwitchContainer);
         phone.getStyleClass().add("phone");
-        root.setCenter(phone);
-        Scene scene = new Scene(root);
-        scene.getStylesheets().add("/style.css");
-        stage.setScene(scene);
-        stage.setResizable(false);
-        stage.setTitle("Phone");
-        stage.show();
+        this.setCenter(phone);
     }
 
     private void createPhone(GridPane grid)
@@ -135,5 +120,15 @@ public class PhoneGui extends Application {
             temp += displayLabel.getText().substring(i, i + 1);
         }
         displayLabel.setText(temp);
+    }
+
+    /**
+     * Change the display from the phone to the calculator.
+     */
+    private void hideDisplay(MouseEvent event)
+    {
+        TranslateTransition hidePhone = new TranslateTransition(Duration.millis(500), phone);
+        hidePhone.setToX(-phone.getWidth());
+        hidePhone.play();
     }
 }
