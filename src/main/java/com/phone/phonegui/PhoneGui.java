@@ -17,11 +17,16 @@ import java.util.List;
 public class PhoneGui extends Application {
 
     private Label displayLabel;
+    private Label calculatorSwitch;
 
     public PhoneGui()
     {
         displayLabel = new Label("");
         displayLabel.setId("display-label");
+        calculatorSwitch = new Label("<");
+        calculatorSwitch.setMaxHeight(Double.MAX_VALUE);
+        calculatorSwitch.setMaxWidth(Double.MAX_VALUE);
+        calculatorSwitch.setId("calculator-switch");
     }
 
     /**
@@ -39,19 +44,23 @@ public class PhoneGui extends Application {
     @Override
     public void start(Stage stage) {
         BorderPane root = new BorderPane();
-        GridPane grid = new GridPane();
-        createPhone(grid);
+        GridPane keypad = new GridPane();
+        createPhone(keypad);
 
         BorderPane display = new BorderPane();
         display.getStyleClass().add("display");
         display.setCenter(displayLabel);
 
-        Pane phone = new VBox(display, grid);
+        BorderPane phone = new BorderPane();
+        phone.setTop(display);
+        phone.setCenter(keypad);
+        phone.setLeft(calculatorSwitch);
         phone.getStyleClass().add("phone");
         root.setCenter(phone);
-        Scene scene = new Scene(root, 350, 500);
+        Scene scene = new Scene(root);
         scene.getStylesheets().add("/style.css");
         stage.setScene(scene);
+        stage.setResizable(false);
         stage.setTitle("Phone");
         stage.show();
     }
