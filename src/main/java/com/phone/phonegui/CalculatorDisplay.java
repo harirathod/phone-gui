@@ -71,9 +71,13 @@ public class CalculatorDisplay extends DisplayWithKeypad {
         Label zero = new Label("0");
         Label decimal = new Label(".");
         Label equals = new Label("=");
+        equals.getStyleClass().add("operator");
         Label plus = new Label("+");
+        plus.getStyleClass().add("operator");
         Label minus = new Label("-");
+        minus.getStyleClass().add("operator");
         Label ac = new Label("AC");
+        ac.getStyleClass().add("operator");
 
         List<Label> numbers = new ArrayList<>();
         Collections.addAll(numbers, one, two, three, four, five, six, seven, eight, nine, zero);
@@ -88,7 +92,7 @@ public class CalculatorDisplay extends DisplayWithKeypad {
         grid.addRow(0, seven, eight, nine);
         grid.addRow(1, four, five, six);
         grid.addRow(2, one, two, three);
-        grid.add(zero, 0, 3, 5, 3);
+        grid.add(zero, 0, 3, 2, 1);
         grid.add(decimal, 2, 3);
         grid.add(equals, 3, 3);
         grid.add(ac, 3, 0);
