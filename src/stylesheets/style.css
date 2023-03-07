@@ -1,13 +1,13 @@
 
-
 GridPane {
     -fx-vgap: 8px;
     -fx-hgap: 8px;
     -fx-max-width: 200;
     -fx-max-height: 200;
+    -fx-padding: 0px 22px 0px 0px
 }
 
-VBox {
+VBox.keypad-button {
     -fx-min-width: 72px;
     -fx-min-height: 72px;
 }
@@ -46,7 +46,7 @@ BorderPane.phone {
     -fx-font-size: 28px;
 }
 
-#display-label {
+.display-label {
     -fx-font-size: 16px;
     -fx-font-family: sans-serif;
     -fx-text-overrun: ellipsis;
@@ -66,4 +66,14 @@ BorderPane.phone {
 
 .display {
     -fx-padding: 16px 0px 0px 0px;
+}
+
+.switch {
+    -fx-padding: 16px 8px 16px;
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}
+
+.switch-container {
+    -fx-alignment: center;
 }
