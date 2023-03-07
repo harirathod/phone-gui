@@ -22,7 +22,7 @@ public class PhoneDisplay extends DisplayWithKeypad {
     public PhoneDisplay()
     {
         super();
-        switchDisplays.setText(">");
+        switchDisplayLabel.setText(">");
         phone = new BorderPane();
         createPhoneDisplay();
     }
@@ -39,10 +39,10 @@ public class PhoneDisplay extends DisplayWithKeypad {
         display.setCenter(displayLabel);
         displayLabel.getStyleClass().add("display-label");
 
-        VBox switchContainer = new VBox(switchDisplays);
+        VBox switchContainer = new VBox(switchDisplayLabel);
         switchContainer.getStyleClass().add("switch-container");
         switchContainer.setMaxHeight(Double.MAX_VALUE);
-        switchDisplays.getStyleClass().add("switch");
+        switchDisplayLabel.getStyleClass().add("switch");
 
         phone.setTop(display);
         phone.setCenter(keypad);
