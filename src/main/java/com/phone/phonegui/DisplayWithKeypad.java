@@ -18,24 +18,32 @@ public abstract class DisplayWithKeypad extends BorderPane {
 
     /**
      * Move the display to the left by using translation transitions.
-     * @param event The action event associated with this transition.
      */
-    protected void moveToLeft(MouseEvent event)
+    public void moveToLeft()
     {
-        TranslateTransition hideThis = new TranslateTransition(Duration.millis(500), this);
-        hideThis.setToX(-this.getWidth());
-        hideThis.play();
+        TranslateTransition moveLeft = new TranslateTransition(Duration.millis(500), this);
+        moveLeft.setToX(-this.getWidth());
+        moveLeft.play();
     }
 
     /**
      * Move the display to the left by using translation transitions.
-     * @param event The action event associated with this transition.
      */
-    protected void moveToRight(MouseEvent event)
+    public void moveToRight()
     {
-        TranslateTransition hideThis = new TranslateTransition(Duration.millis(500), this);
-        hideThis.setToX(this.getWidth());
-        hideThis.play();
+        TranslateTransition moveRight = new TranslateTransition(Duration.millis(500), this);
+        moveRight.setToX(this.getWidth());
+        moveRight.play();
+    }
+
+    /**
+     * Move the display to its original position, in the center of the scene.
+     */
+    public void moveToOriginal()
+    {
+        TranslateTransition moveOriginal = new TranslateTransition(Duration.millis(500), this);
+        moveOriginal.setToX(0);
+        moveOriginal.play();
     }
 
     /**
