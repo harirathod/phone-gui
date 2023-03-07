@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="808c573a-b3ce-4a8a-a1a4-48537b156e80" name="Changes" comment="Rename variables">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/phone/phonegui/DisplayWithKeypad.java" afterDir="false" />
+    <list default="true" id="808c573a-b3ce-4a8a-a1a4-48537b156e80" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/phone/phonegui/ListWithVarArgsAdd.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/phone/phonegui/CalculatorDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phone/phonegui/CalculatorDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phone/phonegui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phone/phonegui/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phone/phonegui/PhoneDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phone/phonegui/PhoneDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -320,7 +319,49 @@
       <option name="project" value="LOCAL" />
       <updated>1678184902440</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Create basic calculator">
+      <created>1678193207092</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1678193207092</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Create abstract superclass">
+      <created>1678193262050</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1678193262050</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Add phone and calculator to main class">
+      <created>1678193330997</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1678193330997</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Refactor to use inheritance of DisplayWithKeypad">
+      <created>1678193383010</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1678193383010</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Make abstract">
+      <created>1678193401970</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1678193401970</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Automatic config change">
+      <created>1678193413325</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1678193413325</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -335,12 +376,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Make keypad background color lighter" />
-    <MESSAGE value="Make keypad bigger" />
-    <MESSAGE value="Add 4th row of *, 0, #. Add identifier for asterisk" />
-    <MESSAGE value="Make asterisk bigger. Add padding for asterisk" />
-    <MESSAGE value="Add display label at top of screen and display label identifier" />
-    <MESSAGE value="Add color styling to display message" />
     <MESSAGE value="Add vbox to contain display." />
     <MESSAGE value="Add vbox to contain display" />
     <MESSAGE value="Update files" />
@@ -360,6 +395,12 @@
     <MESSAGE value="Create file to hold calculator and phone" />
     <MESSAGE value="Automatic configuration changes" />
     <MESSAGE value="Rename variables" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rename variables" />
+    <MESSAGE value="Create basic calculator" />
+    <MESSAGE value="Create abstract superclass" />
+    <MESSAGE value="Add phone and calculator to main class" />
+    <MESSAGE value="Refactor to use inheritance of DisplayWithKeypad" />
+    <MESSAGE value="Make abstract" />
+    <MESSAGE value="Automatic config change" />
+    <option name="LAST_COMMIT_MESSAGE" value="Automatic config change" />
   </component>
 </project>
