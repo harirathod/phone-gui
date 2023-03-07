@@ -1,3 +1,5 @@
+
+
 GridPane {
     -fx-vgap: 8px;
     -fx-hgap: 8px;
@@ -30,17 +32,13 @@ VBox.keypad-button:pressed {
     -fx-background-color: #000000ba;
 }
 
-VBox.phone {
+BorderPane.phone {
     -fx-max-width: 300px;
     -fx-max-height: 450px;
     -fx-min-width: 300px;
     -fx-min-height: 450px;
-    -fx-spacing: 32px;
     -fx-background-color: #0000006f;
-    -fx-background-insets: 1px;
-    -fx-background-radius: 10px;
     -fx-alignment: center;
-    -fx-border-radius: 10px;
 }
 
 #asterisk-button > .label {
@@ -55,9 +53,6 @@ VBox.phone {
     -fx-text-fill: #0000008a;
     -fx-padding: 16px;
     -fx-font-weight: 700;
-}
-
-.display {
     -fx-background-color: #ffffff3a;
     -fx-background-radius: 7px;
     -fx-background-insets: 1px;
@@ -66,4 +61,9 @@ VBox.phone {
     -fx-border-color: #0000008a;
     -fx-border-width: 3px;
     -fx-border-radius: 7px;
+    -fx-alignment: center;
+}
+
+.display {
+    -fx-padding: 16px 0px 0px 0px;
 }
