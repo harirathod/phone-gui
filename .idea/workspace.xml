@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="808c573a-b3ce-4a8a-a1a4-48537b156e80" name="Changes" comment="Automatic config change">
+      <change afterPath="$PROJECT_DIR$/src/test/java/LoadingTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,23 +48,29 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "jdk.selected.JAVA_MODULE": "18 (2)",
-    "last_opened_file_path": "/Users/hari_rathod/Downloads/S1Y1/PPA4CCS1/personal_projects/phone-gui",
+    "last_opened_file_path": "/Users/hari_rathod/Downloads/S1Y1/PPA4CCS1/personal_projects/phone-gui/src/test",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java" />
+      <recent name="$PROJECT_DIR$/src/test/java/phonegui" />
       <recent name="$PROJECT_DIR$/src/stylesheets" />
       <recent name="$PROJECT_DIR$/src/main/resources/com/phone/phonegui" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
       <recent name="com.phone.phonegui" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.LoadingTest">
     <configuration name="com.phone.phonegui" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.phone.phonegui.Main" />
       <module name="phone-gui" />
@@ -70,6 +78,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="All in package" type="JUnit" factoryName="JUnit">
+      <module name="phone-gui" />
+      <option name="PACKAGE_NAME" value="com.phone.phonegui" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoadingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="phone-gui" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.phone.phonegui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.phone.phonegui" />
+      <option name="MAIN_CLASS_NAME" value="com.phone.phonegui.LoadingTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.com.phone.phonegui" />
+      <item itemvalue="JUnit.All in package" />
+      <item itemvalue="JUnit.LoadingTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.LoadingTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
