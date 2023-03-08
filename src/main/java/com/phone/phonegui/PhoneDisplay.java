@@ -1,11 +1,9 @@
 package com.phone.phonegui;
 
-import javafx.animation.TranslateTransition;
 import javafx.scene.*;
 import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.*;
-import javafx.util.Duration;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -90,7 +88,13 @@ public class PhoneDisplay extends DisplayWithKeypad {
         // keypad button clicked
         for(VBox vbox : numbers) {
             Label label = (Label) vbox.getChildren().get(vbox.getChildren().size() - 1);
-            vbox.setOnMouseClicked(event -> displayLabel.setText(displayLabel.getText() + label.getText()));
+            vbox.setOnMouseClicked(event -> {
+                if(!("Calling...").equals(displayLabel.getText())) {
+                    displayLabel.setText(displayLabel.getText() + label.getText());
+                } else {
+                    displayLabel.setText(label.getText());
+                }
+            });
         }
 
         VBox ast = new VBox();
@@ -103,10 +107,17 @@ public class PhoneDisplay extends DisplayWithKeypad {
         hash.getChildren().addAll(new Label("#"));
         hash.setOnMouseClicked(event -> displayLabel.setText(""));
 
+        VBox dial = new VBox();
+        dial.getChildren().add(new Label("Call"));
+        dial.setOnMouseClicked(event -> displayLabel.setText("Calling..."));
+        dial.setId("dial-btn");
+
         grid.addRow(0, one, two, three);
         grid.addRow(1, four, five, six);
         grid.addRow(2, sev, eight, nine);
         grid.addRow(3, ast, zero, hash);
+        grid.add(dial, 1, 4);
+
         for(Node node : grid.getChildren()) {
             node.getStyleClass().add("keypad-button");
         }
@@ -123,6 +134,4 @@ public class PhoneDisplay extends DisplayWithKeypad {
         }
         displayLabel.setText(temp);
     }
-
-
 }

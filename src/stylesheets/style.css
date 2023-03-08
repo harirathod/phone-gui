@@ -1,6 +1,6 @@
 .phone GridPane {
-    -fx-vgap: 8px;
-    -fx-hgap: 8px;
+    -fx-vgap: 12px;
+    -fx-hgap: 16px;
     -fx-max-width: 200;
     -fx-max-height: 200;
     -fx-padding: 0px 22px 0px 0px;
@@ -15,8 +15,8 @@
 }
 
 .phone .keypad-button {
-    -fx-min-width: 72px;
-    -fx-min-height: 72px;
+    -fx-min-width: 60px;
+    -fx-min-height: 60px;
     -fx-background-color: #f5f5f5;
     -fx-spacing: 4px;
     /*-fx-border-color: black;
@@ -24,6 +24,15 @@
     -fx-border-radius: 30px;*/
     -fx-background-insets: 0px;
     -fx-background-radius: 30px;
+}
+
+#dial-btn {
+    -fx-background-color: #12b312;
+    -fx-text-fill: white;
+}
+
+#dial-btn:pressed {
+    -fx-background-color: #125212;
 }
 
 .calculator .keypad-button {
@@ -41,7 +50,7 @@
 }
 
 .phone .keypad-button > .label {
-    -fx-font-size: 18px;
+    -fx-font-size: 14px;
     -fx-text-fill: #262626;
 }
 
